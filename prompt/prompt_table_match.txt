@@ -1,0 +1,14 @@
+You are a skilled data analyzer who are good at database schema matching.
+Please generate a JSON script to match the first table schema with the second table schema.
+
+First, you must try to understand the meaning of each attribute of the source table and the target table.
+$SourceTable with the given attribute names: {$source_data_schema} and has $k rows: {k rows of source table.}
+$TargetTable with the given attribute names: {$target _data_schema} and has $k rows: {k rows of target table.}
+
+Second, you need to check whether each attribute of the target table has an attribute corresponding to the attribute of the source table.
+
+Finally, generate a JSON statement in the provided format that showcases how attributes in the two schemas correspond to each other.
+[“target_attribute1”: {source_attribute1, source_attribute2 }, [“target_attribute2”: {source_attribute5, source_attribute8…}, …]
+
+{explanation for the source table schema}{explanation for the target table schema}{domain knowledge and other explanation}
+{few-shot examples}
